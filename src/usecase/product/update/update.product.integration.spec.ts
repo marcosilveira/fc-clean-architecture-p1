@@ -41,8 +41,8 @@ describe("Test update product use case", () => {
         expect(resultCreate).toEqual(output);
         const inputUpdate = {
             id: resultCreate.id,
-            name: "Product 1",
-            price: 10
+            name: "Product 2",
+            price: 20
         }
         const resultUpdate = await usecaseUpdate.execute(inputUpdate);
         expect(resultUpdate).toEqual(inputUpdate);
